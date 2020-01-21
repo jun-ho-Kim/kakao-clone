@@ -43,6 +43,8 @@ width:70px;
 .friend__content .friend__bottom-text{
     font-size:14px;
     opacity: 0.6;
+    width:70%;
+    
 }
 .friend__content .friend__status,
 .friend__column .chat__timestamp {
