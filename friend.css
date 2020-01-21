@@ -27,22 +27,24 @@ width:70px;
 .friend__content .friend__name {
     display: block;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 /* friend 화면에 적용되는 부분 */
 .friend__content .friend__status,
-.friend__content .friend__bottom-text
+.friend__content .friend__bottom-text,
 .friend__column .chat__timestamp {
     opacity: 0.6;
+    width:50%;
 }
 
 /* chat부분에만 적용되는 부분 */
 .friend__content .friend__bottom-text{
     font-size:14px;
 }
-.friend__content .friend__status,
 .friend__column .chat__timestamp {
     font-size:12px;
+    margin-left:8px;
 }
 
 .friend .friend__now-listening{
@@ -62,4 +64,26 @@ width:70px;
     align-items: center;
     background-color: #f5f5f5;
     border-radius: 5px;
+}
+.chat__right {
+    position: relative;
+    top:-18px;
+    display: flex;
+    align-items: flex-start;
+}
+.chat__right .chat__badge{
+    position: absolute;
+    top:22px;
+    right: 3px;
+    font-size: 13px;
+    color: white;
+    background-color: #f8492a;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box 높이의 반(10px)를 주면 동그라미 모양으로 만들 수 있다. */
+    /* or border-radius: 50% 로 두어도 된다. */
+    border-radius: 20px;
 }
